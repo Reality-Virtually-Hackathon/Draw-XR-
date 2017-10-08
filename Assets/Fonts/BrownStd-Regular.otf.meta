@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bdd635813cbdd2a4daaf8ce8a0c8ed1d
+timeCreated: 1507475803
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: BrownStd
+  fontNames:
+  - BrownStd
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: aa1afa284db9a354aa171d418786930e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

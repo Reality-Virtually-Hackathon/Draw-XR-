@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawXR", "DrawXR.csproj", "{5C3D6874-C4AE-A0BC-2905-9302BFDF6B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawXR.Plugins", "DrawXR.Plugins.csproj", "{23FCA6B1-F37E-85D8-E234-B34D0D269DDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawXR.Editor", "DrawXR.Editor.csproj", "{57B862D2-5511-BEA2-1F73-1E2572F4372E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C3D6874-C4AE-A0BC-2905-9302BFDF6B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3D6874-C4AE-A0BC-2905-9302BFDF6B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3D6874-C4AE-A0BC-2905-9302BFDF6B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3D6874-C4AE-A0BC-2905-9302BFDF6B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23FCA6B1-F37E-85D8-E234-B34D0D269DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FCA6B1-F37E-85D8-E234-B34D0D269DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FCA6B1-F37E-85D8-E234-B34D0D269DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FCA6B1-F37E-85D8-E234-B34D0D269DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B862D2-5511-BEA2-1F73-1E2572F4372E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B862D2-5511-BEA2-1F73-1E2572F4372E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B862D2-5511-BEA2-1F73-1E2572F4372E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B862D2-5511-BEA2-1F73-1E2572F4372E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
