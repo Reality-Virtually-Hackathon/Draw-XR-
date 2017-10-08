@@ -45,7 +45,7 @@ public class ColorManager2 : MonoBehaviour
 
     void Update()
     {
-        if ((OVRInput.Get(buttonX)) && !OVRInput.GetDown(triggerL))
+        if ((OVRInput.GetUp(buttonX)))
         {
 
             photonView.RPC("ChangeColor", PhotonTargets.Others, null);

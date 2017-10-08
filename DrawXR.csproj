@@ -125,6 +125,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AnswerScript.cs" />
+    <Compile Include="Assets\ARCanvasRenderer.cs" />
     <Compile Include="Assets\Color_Ui_Control.cs" />
     <Compile Include="Assets\OVR\Scripts\Composition\OVRCameraComposition.cs" />
     <Compile Include="Assets\OVR\Scripts\Composition\OVRComposition.cs" />
@@ -326,12 +328,14 @@
     <Compile Include="Assets\Scripts\LeftTouch.cs" />
     <Compile Include="Assets\Scripts\LineRenderer.cs" />
     <Compile Include="Assets\Scripts\LoadGame.cs" />
+    <Compile Include="Assets\Scripts\MyUiActions.cs" />
     <Compile Include="Assets\Scripts\NetworkedLineRenderer.cs" />
     <Compile Include="Assets\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\Scripts\PlayerSetup.cs" />
     <Compile Include="Assets\Scripts\RiftManager.cs" />
     <Compile Include="Assets\Scripts\RightTouch.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\TopicButton.cs" />
     <Compile Include="Assets\TouchControllerPBRPack\Scripts\ToggleControllerVisuals.cs" />
     <Compile Include="Assets\TouchControllerPBRPack\Scripts\TriggerVolumeControllers.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />

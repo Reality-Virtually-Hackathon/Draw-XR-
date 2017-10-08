@@ -10,6 +10,8 @@ public class NetworkManager : MonoBehaviour {
 	public GameObject r_armPrefab;
     public GameObject spectatorPrefab;
 
+    public GameObject spawnArea;
+
 	/// <summary>Connect automatically? If false you can set this to true later on or call ConnectUsingSettings in your own scripts.</summary>
 	public bool AutoConnect = true;
 
@@ -62,6 +64,26 @@ public class NetworkManager : MonoBehaviour {
 			GameObject lArm = PhotonNetwork.Instantiate(l_armPrefab.name, RiftManager.Instance.leftHand.transform.position, RiftManager.Instance.leftHand.transform.rotation, 0); 
 			GameObject rArm = PhotonNetwork.Instantiate(r_armPrefab.name, RiftManager.Instance.rightHand.transform.position, RiftManager.Instance.rightHand.transform.rotation, 0);
         } else {
+            var arGameobject = ARManager.Instance.gameObject;
+            var spawnPosition = spawnArea.transform.position;
+
+			var lookPos = spawnPosition - arGameobject.transform.position;
+			var rotation = Quaternion.LookRotation(lookPos);
+
+			if (PhotonNetwork.playerList.Length == 1) {
+                arGameobject.transform.position = new Vector3(spawnPosition.x + 2f, 0f, spawnPosition.z + 2f); 
+                arGameobject.transform.rotation = Quaternion.Slerp(arGameobject.transform.rotation, rotation, Time.deltaTime * 2);
+			} else if (PhotonNetwork.playerList.Length == 2) {
+                arGameobject.transform.position = new Vector3(spawnPosition.x + -2f, 0f, spawnPosition.z + -2f);
+                arGameobject.transform.rotation = Quaternion.Slerp(arGameobject.transform.rotation, rotation, Time.deltaTime * 2);
+            } else if (PhotonNetwork.playerList.Length == 3) {
+                arGameobject.transform.position = new Vector3(spawnPosition.x + 2f, 0f, spawnPosition.z + -2f);
+                arGameobject.transform.rotation = Quaternion.Slerp(arGameobject.transform.rotation, rotation, Time.deltaTime * 2);
+            } else {
+                arGameobject.transform.position = new Vector3(spawnPosition.x + -2f, 0f, spawnPosition.z + 2f);
+                arGameobject.transform.rotation = Quaternion.Slerp(arGameobject.transform.rotation, rotation, Time.deltaTime * 2);
+            }
+
 			GameObject arHead = PhotonNetwork.Instantiate(spectatorPrefab.name, ARManager.Instance.head.transform.position, ARManager.Instance.head.transform.rotation, 0);
             Debug.Log("AR Player entered room!");
         }

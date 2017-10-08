@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrawList : MonoBehaviour {
+public static class DrawList  {
 
     // Use this for initialization
     [SerializeField]
-    private string[] Categories;
-    private string[] IdomTopic;
-    private string[] JobTopic;
-    private string[] PlaceTopic;
-	void Start ()
+    public static string[] Categories;
+    public static string[] IdomTopic;
+    public static string[] JobTopic;
+    public static string[] PlaceTopic;
+	public static void Start ()
     {
         Categories = new string[] 
         {
@@ -77,9 +77,5 @@ public class DrawList : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
+	
 }

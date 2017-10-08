@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RightTouch : MonoBehaviour {
 
-   
+    
     public OVRInput.Controller controller;
     // Use this for initialization
 
