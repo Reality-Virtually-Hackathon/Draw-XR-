@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Main_Photon.unity
+- path: Assets/Scenes/AR_HomeScreen.unity
   isLoaded: 1
   isActive: 1

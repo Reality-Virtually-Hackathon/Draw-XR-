@@ -9,10 +9,12 @@ public class Timer : MonoBehaviour
 
     public int timeLeft = 5;
     public Text countdownText;
+    private PhotonView photonView;
 
     // Use this for initialization
     void Start()
     {
+        photonView = PhotonView.Get(this);
         StartCoroutine("LoseTime");
     }
 
@@ -29,14 +31,20 @@ public class Timer : MonoBehaviour
         }
     }
 
+    public void StartTimer() {
+        
+    }
+
     IEnumerator LoseTime()
     {
         while (true)
         {
             yield return new WaitForSeconds(1);
             timeLeft--;
+			photonView.RPC("SetTime", PhotonTargets.Others, timeLeft.ToString());
         }
     }
-    
+
+
 
 }

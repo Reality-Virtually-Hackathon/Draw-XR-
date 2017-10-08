@@ -329,13 +329,13 @@
     <Compile Include="Assets\Scripts\LineRenderer.cs" />
     <Compile Include="Assets\Scripts\LoadGame.cs" />
     <Compile Include="Assets\Scripts\MyUiActions.cs" />
-    <Compile Include="Assets\Scripts\NetworkedLineRenderer.cs" />
     <Compile Include="Assets\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\Scripts\PlayerSetup.cs" />
     <Compile Include="Assets\Scripts\RiftManager.cs" />
     <Compile Include="Assets\Scripts\RightTouch.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\TopicButton.cs" />
+    <Compile Include="Assets\TimerRPC.cs" />
     <Compile Include="Assets\TouchControllerPBRPack\Scripts\ToggleControllerVisuals.cs" />
     <Compile Include="Assets\TouchControllerPBRPack\Scripts\TriggerVolumeControllers.cs" />
     <Compile Include="Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />

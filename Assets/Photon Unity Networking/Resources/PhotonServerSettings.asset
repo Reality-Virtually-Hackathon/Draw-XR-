@@ -58,4 +58,5 @@ MonoBehaviour:
   - IncreaseWidth_2
   - SetColor_2
   - SetNull_2
+  - SetTime
   DisableAutoOpenWizard: 1
